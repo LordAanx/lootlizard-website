@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('lootlizard-theme') || 'dark';
   applyTheme(savedTheme);
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.faq-item').classList.toggle('open');
+    });
+  });
 });
 
 function applyTheme(theme) {
