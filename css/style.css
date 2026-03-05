@@ -239,6 +239,74 @@ body,
   font-size: 0.95rem;
 }
 
+/* ===== Screenshots Carousel ===== */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 1rem 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+}
+
+.phone-frame-sm {
+  width: 200px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 3px solid #333;
+}
+
+.phone-frame-sm img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  z-index: 10;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.carousel-btn:hover {
+  background: var(--accent-green);
+  color: white;
+}
+
+.carousel-prev {
+  left: -24px;
+}
+
+.carousel-next {
+  right: -24px;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero-content {
@@ -268,6 +336,10 @@ body,
   }
 
   .nav-links a {
+    display: none;
+  }
+
+  .carousel-btn {
     display: none;
   }
 }

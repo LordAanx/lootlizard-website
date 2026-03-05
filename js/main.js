@@ -27,3 +27,11 @@ function toggleTheme() {
 }
 
 window.toggleTheme = toggleTheme;
+
+function scrollCarousel(direction) {
+  const track = document.querySelector('.carousel-track');
+  if (!track) return;
+  const scrollAmount = 220; // phone width + gap
+  track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+window.scrollCarousel = scrollCarousel;
