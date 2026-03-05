@@ -307,6 +307,66 @@ body,
   right: -24px;
 }
 
+/* ===== Download CTA ===== */
+.cta-section {
+  background: var(--accent-brown);
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.cta-content .store-buttons {
+  justify-content: center;
+}
+
+.cta-content .store-badge {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: var(--text);
+  opacity: 0.6;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-copy {
+  opacity: 0.4;
+  font-size: 0.875rem;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero-content {
@@ -341,5 +401,10 @@ body,
 
   .carousel-btn {
     display: none;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
   }
 }
