@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LootLizard — Never Forget Where You Found It</title>
   <meta name="description" content="LootLizard is the metal detecting companion app that logs your finds, tracks your hunts with GPS, and remembers every location. Available on Android.">
-  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="icon" type="image/png" href="images/icon.png">
   <meta name="theme-color" content="#3E2723">
   <meta property="og:title" content="LootLizard — Never Forget Where You Found It">
   <meta property="og:description" content="The metal detecting companion app that logs your finds, tracks your hunts, and remembers every location.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/dashboard.jpg">
+  <meta property="og:image" content="images/screenshot-dashboard.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="LootLizard — Never Forget Where You Found It">
   <meta name="twitter:description" content="The metal detecting companion app that logs your finds, tracks your hunts, and remembers every location.">
-  <meta name="twitter:image" content="images/dashboard.jpg">
+  <meta name="twitter:image" content="images/screenshot-dashboard.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="nav">
     <div class="container nav-inner">
       <a href="/" class="nav-logo">
-        <img src="images/logo.svg" alt="LootLizard" width="36" height="36">
+        <img src="images/icon.png" alt="LootLizard" width="36" height="36" style="border-radius: 8px;">
         <span>LootLizard</span>
       </a>
       <div class="nav-links">
         <a href="#features">Features</a>
+        <a href="#watch">Watch</a>
         <a href="#screenshots">Screenshots</a>
         <a href="#download">Download</a>
         <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
@@ -39,19 +40,17 @@
         <h1>Never forget where you found it.</h1>
         <p class="hero-subtitle">LootLizard is the metal detecting companion app that logs your finds, tracks your hunts, and remembers every location.</p>
         <div class="store-buttons">
-          <a href="#" class="store-badge google-play">
-            <span>GET IT ON</span>
-            <strong>Google Play</strong>
+          <a href="#" class="store-badge-img">
+            <img src="images/google-play-badge.svg" alt="Get it on Google Play" height="48">
           </a>
-          <a href="#" class="store-badge app-store">
-            <span>Download on the</span>
-            <strong>App Store</strong>
+          <a href="#" class="store-badge-img">
+            <img src="images/app-store-badge.svg" alt="Download on the App Store" height="48">
           </a>
         </div>
       </div>
       <div class="hero-phone">
         <div class="phone-frame">
-          <img src="images/dashboard.jpg" alt="LootLizard Dashboard" loading="lazy">
+          <img src="images/screenshot-dashboard.png" alt="LootLizard Dashboard" loading="lazy">
         </div>
       </div>
     </div>
@@ -95,19 +94,32 @@
     </div>
   </section>
 
+  <section id="watch" class="section">
+    <div class="container">
+      <h2 class="section-title">Your detecting buddy, on your wrist</h2>
+      <p class="watch-subtitle">Start sessions, log finds, and track your haul — all without reaching for your phone.</p>
+      <div class="watch-grid">
+        <div class="watch-frame"><img src="images/screenshot-watch.png" alt="Watch - Start Session" loading="lazy"><span class="watch-label">Start Session</span></div>
+        <div class="watch-frame"><img src="images/screenshot-watch-session.png" alt="Watch - Active Session" loading="lazy"><span class="watch-label">Track Finds</span></div>
+        <div class="watch-frame"><img src="images/screenshot-watch-logfind.png" alt="Watch - Log Coins" loading="lazy"><span class="watch-label">Log Coins</span></div>
+        <div class="watch-frame"><img src="images/screenshot-watch-next.png" alt="Watch - Categories" loading="lazy"><span class="watch-label">All Categories</span></div>
+        <div class="watch-frame"><img src="images/screenshot-watch-finds.png" alt="Watch - Session Summary" loading="lazy"><span class="watch-label">See Your Haul</span></div>
+      </div>
+    </div>
+  </section>
+
   <section id="screenshots" class="section">
     <div class="container">
       <h2 class="section-title">See it in action</h2>
       <div class="carousel">
         <button class="carousel-btn carousel-prev" onclick="scrollCarousel(-1)" aria-label="Previous">&#8249;</button>
         <div class="carousel-track">
-          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/dashboard.jpg" alt="Dashboard" loading="lazy"></div></div>
-          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/map.jpg" alt="Map" loading="lazy"></div></div>
-          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/sessions.jpg" alt="Sessions" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/screenshot-dashboard.png" alt="Dashboard" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/screenshot-collection.png" alt="Collection" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/screenshot-map.png" alt="Map" loading="lazy"></div></div>
           <div class="carousel-item"><div class="phone-frame-sm"><img src="images/log_find1.jpg" alt="Log Find" loading="lazy"></div></div>
-          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/log_find_coin.jpg" alt="Log Coin Find" loading="lazy"></div></div>
-          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/analytics.jpg" alt="Analytics" loading="lazy"></div></div>
-          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/weather.jpg" alt="Weather" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/log_find_coin.jpg" alt="Coin Find" loading="lazy"></div></div>
+          <div class="carousel-item"><div class="phone-frame-sm"><img src="images/screenshot-weather.png" alt="Weather" loading="lazy"></div></div>
           <div class="carousel-item"><div class="phone-frame-sm"><img src="images/tides.jpg" alt="Tides" loading="lazy"></div></div>
         </div>
         <button class="carousel-btn carousel-next" onclick="scrollCarousel(1)" aria-label="Next">&#8250;</button>
@@ -118,15 +130,13 @@
   <section id="download" class="section cta-section">
     <div class="container cta-content">
       <h2>Start logging your finds today</h2>
-      <p>Available on Android. iOS coming soon.</p>
+      <p>Available on Android and iOS.</p>
       <div class="store-buttons">
-        <a href="#" class="store-badge google-play">
-          <span>GET IT ON</span>
-          <strong>Google Play</strong>
+        <a href="#" class="store-badge-img">
+          <img src="images/google-play-badge.svg" alt="Get it on Google Play" height="48">
         </a>
-        <a href="#" class="store-badge app-store">
-          <span>Download on the</span>
-          <strong>App Store</strong>
+        <a href="#" class="store-badge-img">
+          <img src="images/app-store-badge.svg" alt="Download on the App Store" height="48">
         </a>
       </div>
     </div>

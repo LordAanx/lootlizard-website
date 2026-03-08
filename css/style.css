@@ -196,6 +196,23 @@ body,
   font-size: 1.1rem;
 }
 
+.store-badge-img {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  transition: transform 0.2s;
+}
+
+.store-badge-img:hover {
+  transform: translateY(-2px);
+}
+
+.store-badge-img img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
 /* ===== Section Title ===== */
 .section-title {
   text-align: center;
@@ -237,6 +254,42 @@ body,
 .feature-card p {
   opacity: 0.7;
   font-size: 0.95rem;
+}
+
+/* ===== Watch Section ===== */
+.watch-subtitle {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 1.15rem;
+  max-width: 500px;
+  margin: -1.5rem auto 2.5rem;
+}
+
+.watch-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.watch-frame {
+  text-align: center;
+}
+
+.watch-frame img {
+  width: 140px;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 3px solid #333;
+  display: block;
+}
+
+.watch-label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.7;
 }
 
 /* ===== Screenshots Carousel ===== */
